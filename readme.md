@@ -1,8 +1,8 @@
 # Web Elements 💎 with Angular
 
-<img src="./brand/cover.png" />
-
 If you want to use [Web Elements](https://github.com/guardiani-del-web/web-elements) in your project with Angular follow this repository.
+You can try this demo on [CodeSanbox](https://codesandbox.io/s/github/grandemayta/web-elements-angular).
+
 
 ## Our Contributors ✨
 
