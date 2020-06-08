@@ -1,7 +1,6 @@
 {
   "name": "web-elements-with-angular",
   "version": "0.0.0",
-  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^9.0.0",
     "@angular/common": "^9.0.0",
@@ -46,6 +44,33 @@
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
   },
-  "keywords": [],
-  "description": ""
+  "private": false,
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Gabriel Mayta",
+      "email": "grandemayta@gmail.com",
+      "url": "https://github.com/grandemayta"
+    },
+    {
+      "name": "Gianpierre Fernandez",
+      "email": "fgianpierre@gmail.com",
+      "url": "https://github.com/G1anpierre"
+    },
+    {
+      "name": "Ferdinando Danise",
+      "email": "daniseferdinando@gmail.com",
+      "url": "https://github.com/fdanise"
+    },
+    {
+      "name": "Gabriel Sosa",
+      "email": "gabe.dev.web@gmail.com",
+      "url": "https://github.com/gsosa2000"
+    },
+    {
+      "name": "Angelo Falci",
+      "email": "a.falci@live.it",
+      "url": "https://github.com/FAngelo94"
+    }
+  ]
 }
