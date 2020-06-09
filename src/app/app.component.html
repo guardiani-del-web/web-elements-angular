@@ -11,9 +11,11 @@
 <h1>Radio</h1>
 
 <we-radio-group name="countriess" [changeCallback]="radioHandler.bind(this)">
-  <we-radio *ngFor="let country of countries" [value]="country.value" [checked]="country.checked">
-    {{country.label}}
-  </we-radio>
+  <ng-container *ngFor="let country of countries">
+    <we-radio [value]="country.value" [checked]="country.checked">
+      {{country.label}}
+    </we-radio>
+  </ng-container>
 </we-radio-group>
 
 <we-radio-group name="countries" [changeCallback]="radioHandler.bind(this)">
