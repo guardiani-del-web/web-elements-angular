@@ -6,18 +6,18 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
   fruits: Array<{ value: string, label: string }>;
-  countries: Array<{ value: string, label: string }>;
+  countries: Array<{ value: string, label: string, checked: boolean }>;
 
   ngOnInit() {
     this.fruits = [
       { label: 'Banana', value: 'banana' },
-      { label: 'Pear', value: 'pear' },
+      { label: 'Pear', value: 'pear', },
       { label: 'Apple', value: 'apple' }
     ];
     this.countries = [
-      { label: 'Italy', value: 'it' },
-      { label: 'Peru', value: 'pe' },
-      { label: 'Germany', value: 'de' }
+      { label: 'Italy', value: 'it', checked: true },
+      { label: 'Peru', value: 'pe', checked: false },
+      { label: 'Germany', value: 'de', checked: false }
     ];
   }
 
