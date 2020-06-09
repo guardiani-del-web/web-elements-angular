@@ -10,8 +10,8 @@
 
 <h1>Radio</h1>
 
-<we-radio-group [changeCallback]="radioHandler.bind(this)">
-  <we-radio *ngFor="let country of countries" name="countries" [value]="country.value">
+<we-radio-group name="countries" [changeCallback]="radioHandler.bind(this)">
+  <we-radio *ngFor="let country of countries" [value]="country.value">
     {{country.label}}
   </we-radio>
 </we-radio-group>
