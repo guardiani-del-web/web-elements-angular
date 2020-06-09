@@ -1,9 +1,9 @@
 <h1>Checkbox</h1>
 
 <we-checkbox-group name="fruits" [changeCallback]="checkboxHandler.bind(this)">
-  <we-checkbox value="banana">Banana</we-checkbox>
-  <we-checkbox disabled="true" value="apple">Apple</we-checkbox>
-  <we-checkbox value="pear">Pear</we-checkbox>
+  <we-checkbox *ngFor="let fruit of fruits" [value]="fruit.value">
+    {{fruit.label}}
+  </we-checkbox>
 </we-checkbox-group>
 
 <we-divider></we-divider>
