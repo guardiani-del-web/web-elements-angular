@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectorRef } from "@angular/core";
 
 @Component({
   selector: "app-root",
@@ -8,6 +8,8 @@ export class AppComponent implements OnInit {
   fruits: Array<{ value: string; label: string }> = [];
   checkboxSelection: Array<{ value: string; label: string }> = [];
   switchSelection: { name: string; status: boolean } = null;
+
+  constructor(private changeDetection: ChangeDetectorRef) {}
 
   ngOnInit() {
     this.fruits = [
@@ -19,13 +21,11 @@ export class AppComponent implements OnInit {
 
   checkboxHandler(currentSelection: []) {
     this.checkboxSelection = currentSelection;
-  }
-
-  sliderHandler(currentSelection: any) {
-    console.log(currentSelection);
+    this.changeDetection.detectChanges();
   }
 
   switchHandler(currentSelection: any) {
     this.switchSelection = currentSelection;
+    this.changeDetection.detectChanges();
   }
 }
