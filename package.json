@@ -1,5 +1,5 @@
 {
-  "name": "web-elements-with-angular",
+  "name": "web-elements-angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,16 +10,14 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular/animations": "^9.0.0",
     "@angular/common": "^9.0.0",
     "@angular/compiler": "^9.0.0",
     "@angular/core": "^9.0.0",
-    "@angular/forms": "^9.0.0",
     "@angular/platform-browser": "^9.0.0",
     "@angular/platform-browser-dynamic": "^9.0.0",
-    "@angular/router": "^9.0.0",
     "core-js": "3.6.4",
-    "rxjs": "6.5.4",
+    "rxjs": "6.5.5",
+    "tslib": "2.0.0",
     "web-elements": "0.0.8",
     "zone.js": "0.10.2"
   },
@@ -72,5 +70,7 @@
       "email": "a.falci@live.it",
       "url": "https://github.com/FAngelo94"
     }
-  ]
+  ],
+  "keywords": [],
+  "description": ""
 }

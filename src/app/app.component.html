@@ -5,17 +5,63 @@
     {{fruit.label}}
   </we-checkbox>
 </we-checkbox-group>
+<ng-container *ngIf="checkboxSelection.length > 0">
+  <p>You selected the current fruits</p>
+  <ul>
+    <li *ngFor="let item of checkboxSelection">
+      {{item.value}}
+    </li>
+  </ul>
+</ng-container>
 
-<we-divider></we-divider>
+<h1>Switch</h1>
 
-<h1>Radio</h1>
+<we-switch
+  name="switch1"
+  [enabled]="false"
+  [changeCallback]="switchHandler.bind(this)"
+></we-switch>
+<br />
+<we-switch
+  name="switch2"
+  [enabled]="true"
+  [changeCallback]="switchHandler.bind(this)"
+></we-switch>
+<ng-container *ngIf="switchSelection !== null">
+  <p>
+    You selected {{switchSelection.name}} with status {{switchSelection.status}}
+  </p>
+</ng-container>
 
-<we-radio-group name="countriess" [changeCallback]="radioHandler.bind(this)">
-  <we-radio
-    *ngFor="let country of countries"
-    value="{{country.value}}"
-    checked="{{country.checked}}"
-  >
-    {{country.label}}
-  </we-radio>
-</we-radio-group>
+<h1>Tabs</h1>
+
+<we-tab-group>
+  <we-tab>
+    <div slot="header">Summer</div>
+    <div slot="content">
+      <p>There really are a lot of features.</p>
+    </div>
+  </we-tab>
+  <we-tab>
+    <div slot="header">Spring</div>
+    <div slot="content">
+      <p>The project started in 2018 when someone needed something.</p>
+    </div>
+  </we-tab>
+  <we-tab>
+    <div slot="header">Autunm</div>
+    <div slot="content">
+      <p>Amazing product. I don't know how it works.</p>
+    </div>
+  </we-tab>
+</we-tab-group>
+
+<h1>Slider</h1>
+
+<we-slider
+  value="10"
+  min="0"
+  max="50"
+  [changeCallback]="sliderHandler.bind(this)"
+  >Slider 1</we-slider
+>
